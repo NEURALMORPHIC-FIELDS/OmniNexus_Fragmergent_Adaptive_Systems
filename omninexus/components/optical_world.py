@@ -4,7 +4,7 @@ Optical World - FFT-based procedural world generation with adaptive complexity.
 Generates smooth, continuous terrain using Fast Fourier Transform with
 exponential filtering. Supports dynamic regeneration based on agent decisions.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

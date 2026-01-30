@@ -10,7 +10,7 @@ Components:
     - Avatar: Energy-constrained agent
     - RLAgent: Phase-coupled learning
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Version: 10.0.0
 """
 

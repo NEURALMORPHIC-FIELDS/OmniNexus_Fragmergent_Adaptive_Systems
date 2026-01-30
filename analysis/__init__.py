@@ -4,7 +4,7 @@ Analysis Tools - Comprehensive analytics for fragmergent systems.
 Provides functions for phase space analysis, Fourier spectrum computation,
 attractor detection, and comparative statistics.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

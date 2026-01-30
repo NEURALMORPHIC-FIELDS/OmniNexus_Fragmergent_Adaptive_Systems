@@ -4,7 +4,7 @@ Avatar - Digital agent with energy management and smart navigation.
 Represents an autonomous agent that moves through the world, consumes energy,
 and collects resources. Tracks trajectory and interaction history.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

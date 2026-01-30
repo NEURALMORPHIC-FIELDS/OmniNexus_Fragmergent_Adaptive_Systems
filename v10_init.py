@@ -19,14 +19,14 @@ Example:
     ...     state = nexus.run_cycle()
     >>> stats = nexus.get_statistics()
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 License: MIT
 """
 
 __version__ = '10.0.0'
-__author__ = 'Lucian Coman'
+__author__ = 'Vasile Lucian Borbeleac'
 
 from .omninexus import OmniNexus
 from .components.oscillator import FragmergentOscillator

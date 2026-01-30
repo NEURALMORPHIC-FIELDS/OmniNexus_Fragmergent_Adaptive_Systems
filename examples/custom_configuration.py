@@ -7,7 +7,7 @@ This example demonstrates:
 - Experimenting with oscillator settings
 - Analyzing the effects of different parameters
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 """
 

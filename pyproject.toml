@@ -10,10 +10,10 @@ readme = "README.md"
 license = {text = "Apache-2.0"}
 requires-python = ">=3.8"
 authors = [
-    {name = "Lucian Coman", email = "neuralmorphic.fields@example.com"}
+    {name = "Vasile Lucian Borbeleac", email = "v.l.borbel@gmail.com"}
 ]
 maintainers = [
-    {name = "Lucian Coman", email = "neuralmorphic.fields@example.com"}
+    {name = "Vasile Lucian Borbeleac", email = "v.l.borbel@gmail.com"}
 ]
 keywords = [
     "adaptive-systems",

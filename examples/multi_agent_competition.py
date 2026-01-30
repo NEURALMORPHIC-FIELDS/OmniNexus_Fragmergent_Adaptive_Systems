@@ -7,7 +7,7 @@ This example demonstrates:
 - Comparing different preset configurations
 - Analyzing competition results
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 """
 
