@@ -1,0 +1,142 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omninexus"
+version = "10.0.0"
+description = "Fragmergent Adaptive Systems - Research platform for edge-of-chaos computation"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Lucian Coman", email = "neuralmorphic.fields@example.com"}
+]
+maintainers = [
+    {name = "Lucian Coman", email = "neuralmorphic.fields@example.com"}
+]
+keywords = [
+    "adaptive-systems",
+    "complex-systems",
+    "reinforcement-learning",
+    "oscillators",
+    "emergence",
+    "edge-of-chaos",
+    "procedural-generation",
+    "fft",
+    "phase-coupling",
+    "multi-agent"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Typing :: Typed"
+]
+
+dependencies = [
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+viz = [
+    "matplotlib>=3.4.0",
+    "seaborn>=0.11.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+    "pre-commit>=2.20.0",
+]
+docs = [
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme>=1.0.0",
+    "myst-parser>=0.18.0",
+]
+all = [
+    "omninexus[viz,dev,docs]",
+]
+
+[project.urls]
+Homepage = "https://github.com/NEURALMORPHIC-FIELDS/OmniNexus_Fragmergent_Adaptive_Systems"
+Documentation = "https://github.com/NEURALMORPHIC-FIELDS/OmniNexus_Fragmergent_Adaptive_Systems/tree/main/docs"
+Repository = "https://github.com/NEURALMORPHIC-FIELDS/OmniNexus_Fragmergent_Adaptive_Systems.git"
+Issues = "https://github.com/NEURALMORPHIC-FIELDS/OmniNexus_Fragmergent_Adaptive_Systems/issues"
+
+[project.scripts]
+omninexus = "omninexus.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["omninexus*", "analysis*"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["omninexus", "analysis"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["omninexus"]
+omit = ["*/tests/*", "*/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
