@@ -10,7 +10,7 @@ Usage:
     python -m omninexus.demo --steps 500     # Custom step count
     python -m omninexus.demo --multi-agent   # Multi-agent competition
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

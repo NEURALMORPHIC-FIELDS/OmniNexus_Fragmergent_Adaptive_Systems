@@ -8,7 +8,7 @@ This example demonstrates:
 - Accessing state information
 - Getting statistics
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 """
 

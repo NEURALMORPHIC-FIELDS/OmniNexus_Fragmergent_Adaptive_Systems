@@ -15,7 +15,7 @@ Differences from v10:
 
 Use this version to understand the basic concepts before moving to v10.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 9.0.0 (Educational)
 """

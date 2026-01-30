@@ -5,7 +5,7 @@ This module implements the core oscillator that drives the fragmergent system.
 The oscillator generates a phase signal φ(t) using multiple harmonics and
 tracks temporal coherence to inform system decisions.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

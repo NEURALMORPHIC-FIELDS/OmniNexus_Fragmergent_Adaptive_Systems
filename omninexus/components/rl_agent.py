@@ -4,7 +4,7 @@ RL Agent - Phase-coupled reinforcement learning with adaptive policy.
 Implements policy gradient learning where update magnitude is modulated
 by the oscillator phase, creating biologically-inspired rhythmic learning.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

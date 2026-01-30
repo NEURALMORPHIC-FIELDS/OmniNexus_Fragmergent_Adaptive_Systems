@@ -4,7 +4,7 @@ OmniNexus - Core orchestrator integrating all fragmergent system components.
 The main system that coordinates oscillator, world, avatar, and RL agent
 to create an adaptive hybrid architecture with intelligent mode switching.
 
-Author: Lucian Coman
+Author: Vasile Lucian Borbeleac
 Date: January 2025
 Version: 10.0.0
 """

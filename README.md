@@ -199,7 +199,7 @@ If you use OmniNexus in your research, please cite:
 
 ```bibtex
 @software{omninexus2025,
-  author = {Coman, Lucian},
+  author = {Borbeleac, Vasile Lucian},
   title = {OmniNexus: Fragmergent Adaptive Systems},
   year = {2025},
   version = {10.0.0},
@@ -213,7 +213,9 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Author
 
-**Lucian Coman** - [NEURALMORPHIC-FIELDS](https://github.com/NEURALMORPHIC-FIELDS)
+**Vasile Lucian Borbeleac** - [NEURALMORPHIC-FIELDS](https://github.com/NEURALMORPHIC-FIELDS)
+
+Contact: v.l.borbel@gmail.com
 
 ---
 
