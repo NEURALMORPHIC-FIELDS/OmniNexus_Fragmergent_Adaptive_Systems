@@ -99,32 +99,32 @@ python -m omninexus.demo --multi-agent
 
 ### Core Components
 
-1. **FragmergentOscillator** (`v10_oscillator.py`)
+1. **FragmergentOscillator** (`omninexus/components/oscillator.py`)
    - Generates phase signal φ(t) using multi-harmonic synthesis
    - Tracks temporal coherence for decision-making
    - Formula: φ(t) = Σ(h=1 to n) [sin(t·f·h) / h] + ε
 
-2. **OpticalWorld** (`v10_optical_world.py`)
+2. **OpticalWorld** (`omninexus/components/optical_world.py`)
    - FFT-based procedural terrain generation
    - Exponential frequency filtering for smooth terrain
-   - Supports dynamic regeneration
+   - Supports dynamic regeneration with filter kernel caching
 
-3. **Avatar** (`v10_avatar.py`)
+3. **Avatar** (`omninexus/components/avatar.py`)
    - Energy-constrained agent navigation
-   - Trajectory tracking and exploration coverage
+   - Memory-efficient trajectory tracking with deque
    - Resource interaction mechanics
 
-4. **RLAgent** (`v10_rl_agent.py`)
+4. **RLAgent** (`omninexus/components/rl_agent.py`)
    - Phase-coupled policy gradient learning
    - Adaptive learning rate based on reward variance
-   - Mode switching decisions
+   - Efficient running statistics with Welford's algorithm
 
-5. **OmniNexus** (`v10_omninexus.py`)
+5. **OmniNexus** (`omninexus/core.py`)
    - Main orchestrator integrating all components
    - Cycle-based execution with reward calculation
    - Statistical tracking and analysis
 
-### Analysis Tools (`v10_analysis.py`)
+### Analysis Tools (`analysis/__init__.py`)
 
 - `analyze_run()`: Comprehensive simulation statistics
 - `analyze_phase_space()`: Attractor detection and stability
@@ -161,7 +161,8 @@ OmniNexus_Fragmergent_Adaptive_Systems/
 │   ├── 02_ARCHITECTURE.md
 │   ├── 03_MATHEMATICS.md
 │   ├── 04_APPLICATIONS.md
-│   └── 05_PATENT_ANALYSIS.md
+│   ├── 05_PATENT_ANALYSIS.md
+│   └── v9_educational_reference.py  # Educational v9 implementation
 ├── examples/                     # Usage examples
 │   ├── basic_simulation.py
 │   ├── multi_agent_competition.py
